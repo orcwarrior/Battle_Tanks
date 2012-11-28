@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>Battle_Tanks.Engine</RootNamespace>
+    <AssemblyName>Engine</AssemblyName>
+    <ProjectGuid>{F552C095-CF3A-42F0-A8B3-DDB213854AEA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\..\..\Projekty\Programowanie\PacMan na silniku\CookieMonster\CookieMonster\bin\Release\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.Compatibility">
+      <HintPath>..\..\..\..\Projekty\Programowanie\PacMan na silniku\CookieMonster\CookieMonster\bin\Release\OpenTK.Compatibility.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl">
+      <HintPath>..\..\..\..\Projekty\Programowanie\PacMan na silniku\CookieMonster\CookieMonster\bin\Release\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickFont">
+      <HintPath>..\..\..\..\Projekty\Programowanie\PacMan na silniku\CookieMonster\CookieMonster\bin\Release\QuickFont.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects\virtualObject.cs" />
+    <Compile Include="Objects\Static\eSpawnPointType.cs" />
+    <Compile Include="Objects\Static\eStaticObjType.cs" />
+    <Compile Include="Objects\Static\staticObject.cs" />
+    <Compile Include="Objects\Dynamic\dynamicObject.cs" />
+    <Compile Include="Objects\Static\powerUpObject.cs" />
+    <Compile Include="Objects\Static\ePowerUpType.cs" />
+    <Compile Include="Objects\Dynamic\Player.cs" />
+    <Compile Include="Objects\Dynamic\Enemy.cs" />
+    <Compile Include="Objects\Dynamic\Projectile.cs" />
+    <Compile Include="Objects\Dynamic\eDir.cs" />
+    <Compile Include="Objects\Static\staticObjectGroup.cs" />
+    <Compile Include="Objects\Static\staticObjectFactory.cs" />
+    <Compile Include="Objects\Dynamic\Vehicle.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Objects\Dynamic\eVehicleControler.cs" />
+    <Compile Include="Time\timeManager.cs" />
+    <Compile Include="Time\Timer.cs" />
+    <Compile Include="Objects\Dynamic\Weapon.cs" />
+    <Compile Include="eGameState.cs" />
+    <Compile Include="Time\eUnits.cs" />
+    <Compile Include="Sound\Visuals\Texture.cs" />
+    <Compile Include="Sound\Visuals\Sprite.cs" />
+    <Compile Include="mapContants.cs" />
+    <Compile Include="Sound\soundManager.cs" />
+    <Compile Include="Sound\BASS.cs" />
+    <Compile Include="Savegame.cs" />
+    <Compile Include="Controls.cs" />
+    <Compile Include="eKey.cs" />
+    <Compile Include="statistics.cs" />
+    <Compile Include="Objects\Static\eSOBQuarters.cs" />
+    <Compile Include="Menu\menuManager.cs" />
+    <Compile Include="Menu\Menu.cs" />
+    <Compile Include="Menu\menuOpen.cs" />
+    <Compile Include="Menu\menuItem.cs" />
+    <Compile Include="Objects\Dynamic\eEnemyTankType.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
