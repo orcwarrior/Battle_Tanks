@@ -33,15 +33,15 @@ namespace Battle_Tanks.Engine
 		public int currentLevel	{ get;	private set; }
 
 		/// <summary>
-		/// Punkty w których odradzaj¹ siê przeciwnicy na obecnej mapy, ta lista jest wype³niania
-		/// przy ka¿dym ³adowaniu mapy - powiedzmy ze u nas spawn-pointy sa zaznaczane 
-		/// na mapie i nie musz¹ byæ to zawsze te same punkty.
+		/// Punkty w ktï¿½rych odradzajï¿½ siï¿½ przeciwnicy na obecnej mapy, ta lista jest wypeï¿½niania
+		/// przy kaï¿½dym ï¿½adowaniu mapy - powiedzmy ze u nas spawn-pointy sa zaznaczane 
+		/// na mapie i nie muszï¿½ byï¿½ to zawsze te same punkty.
 		/// </summary>
 		public List<staticObject> enemySpawnPoints { get; private set; }
 		/// <summary>
-		/// Wartoœæ oznaczaj¹ca maksymaln¹ iloœæ przeciwników na mapie na raz, liczba bedzie ustawiana na inn¹
-		/// zale¿nie od tego czy wybrano tryb dla 1 czy dla wielu graczy, tak¿e kolejne poziomy mogly by zwiekszaæ iloœæ
-		/// przeciwnikow na mapie (POMYS£).
+		/// Wartoï¿½ï¿½ oznaczajï¿½ca maksymalnï¿½ iloï¿½ï¿½ przeciwnikï¿½w na mapie na raz, liczba bedzie ustawiana na innï¿½
+		/// zaleï¿½nie od tego czy wybrano tryb dla 1 czy dla wielu graczy, takï¿½e kolejne poziomy mogly by zwiekszaï¿½ iloï¿½ï¿½
+		/// przeciwnikow na mapie (POMYSï¿½).
 		/// </summary>
 		public int maxEnemiesOnMap { get; private set; }
 		/// <summary>
@@ -57,7 +57,7 @@ namespace Battle_Tanks.Engine
 		public eGameState state { get; private set; }
 
 		/// <summary>
-		/// Metoda dodaj¹ca pocisk do listy _Projectiles
+		/// Metoda dodajï¿½ca pocisk do listy _Projectiles
 		/// </summary>
 		/// <param name="proj"></param>
 		public void addProjectile(Projectile proj)
@@ -66,26 +66,26 @@ namespace Battle_Tanks.Engine
 		}
 
 		/// <summary>
-		/// Sprawdza kolizje dynamiczn¹ obiektu z innymi obiektami (dynamicznymi)
+		/// Sprawdza kolizje dynamicznï¿½ obiektu z innymi obiektami (dynamicznymi)
 		/// </summary>
-		/// <param name="obj">Obiekt którego kolizja ma zostaæ sprawdzona</param>
-		/// <returns>Lista obiektów z ktorymi koliduje, null jezeli takowych brak</returns>
+		/// <param name="obj">Obiekt ktï¿½rego kolizja ma zostaï¿½ sprawdzona</param>
+		/// <returns>Lista obiektï¿½w z ktorymi koliduje, null jezeli takowych brak</returns>
 		public List<dynamicObject> checkCollisionDyn(dynamicObject obj)
 		{
 			throw new NotImplementedException();
 		}
 		/// <summary>
 		/// Sprawdza kolizje statyczna obiektu z innymi obiektami (statycznymi)
-		/// Obiekt dynamiczny mo¿e kolidowaæ tylko z jednym polem statycznym na raz.
+		/// Obiekt dynamiczny moï¿½e kolidowaï¿½ tylko z jednym polem statycznym na raz.
 		/// </summary>
-		/// <param name="obj">Obiekt którego kolizja ma zostaæ sprawdzona</param>
-		/// <returns>Obiekt statyczny z którym koliduje dany obiekt dynamiczny</returns>
+		/// <param name="obj">Obiekt ktï¿½rego kolizja ma zostaï¿½ sprawdzona</param>
+		/// <returns>Obiekt statyczny z ktï¿½rym koliduje dany obiekt dynamiczny</returns>
 		public staticObject checkCollisionStat(dynamicObject obj)
 		{
 			throw new NotImplementedException();
 		}
 		/// <summary>
-		/// Wczytuje grê z podanego jako parrametr obiektu Savegame
+		/// Wczytuje grï¿½ z podanego jako parrametr obiektu Savegame
 		/// </summary>
 		/// <param name="sav">Savegame do wczytania</param>
 		public void loadGame(Savegame sav)
@@ -93,8 +93,8 @@ namespace Battle_Tanks.Engine
 			throw new NotImplementedException();
 		}
 		/// <summary>
-		/// Odtwarza plik dŸwiêkowy
-		/// Funkcja w³aœciwie poprostu przekazuje parrametr dalej do soundManagera i jego playStream
+		/// Odtwarza plik dï¿½wiï¿½kowy
+		/// Funkcja wï¿½aï¿½ciwie poprostu przekazuje parrametr dalej do soundManagera i jego playStream
 		/// </summary>
 		/// <param name="filename"></param>
 		public void playSound(string filename)
@@ -102,18 +102,18 @@ namespace Battle_Tanks.Engine
 			throw new NotImplementedException();
 		}
 		/// <summary>
-		/// Funkcja nadpisuj¹ca t¹ sam¹ funkcje klasy GameWindow ma za zadanie zale¿nie od obecnego stanu gry:
-		/// *MENU - wywo³aæ Render menuManagera
-		/// *GAME - wywo³aæ Render wszystkich statycznycch obiektów mapy, pojazdów gracza i wroga a na koniec pocisków i power-upów.
+		/// Funkcja nadpisujï¿½ca tï¿½ samï¿½ funkcje klasy GameWindow ma za zadanie zaleï¿½nie od obecnego stanu gry:
+		/// *MENU - wywoï¿½aï¿½ Render menuManagera
+		/// *GAME - wywoï¿½aï¿½ Render wszystkich statycznycch obiektï¿½w mapy, pojazdï¿½w gracza i wroga a na koniec pociskï¿½w i power-upï¿½w.
 		/// </summary>
 		public override void onRender()
 		{
 			throw new NotImplementedException();
 		}
 		/// <summary>
-		/// Funkcja nadpisuj¹ca t¹ sam¹ funkcje klasy GameWindow ma za zadanie zale¿nie od obecnego stanu gry:
-		/// *MENU - wywo³aæ Render menuManagera
-		/// *GAME - wywo³aæ Render wszystkich statycznycch obiektów mapy, pojazdów gracza i wroga a na koniec pocisków i power-upów.
+		/// Funkcja nadpisujï¿½ca tï¿½ samï¿½ funkcje klasy GameWindow ma za zadanie zaleï¿½nie od obecnego stanu gry:
+		/// *MENU - wywoï¿½aï¿½ Render menuManagera
+		/// *GAME - wywoï¿½aï¿½ Render wszystkich statycznycch obiektï¿½w mapy, pojazdï¿½w gracza i wroga a na koniec pociskï¿½w i power-upï¿½w.
 		/// </summary>
 		public override void onUpdate()
 		{
@@ -122,8 +122,8 @@ namespace Battle_Tanks.Engine
 		/// <summary>
 		/// Metoda utworzy odpowiedni obiekt dla danego jako argument piksela
 		/// </summary>
-		/// <param name="x"></param>
-		/// <param name="y"></param>
+		/// <param name="x">koordnant x</param>
+		/// <param name="y">koordnant y</param>
 		private void _createObjectFromMapPixel(int x, int y)
 		{
 			throw new NotImplementedException();
