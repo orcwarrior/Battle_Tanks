@@ -119,7 +119,11 @@ namespace Battle_Tanks.Engine
 		{
 			throw new NotImplementedException();
 		}
-
+		/// <summary>
+		/// Metoda utworzy odpowiedni obiekt dla danego jako argument piksela
+		/// </summary>
+		/// <param name="x"></param>
+		/// <param name="y"></param>
 		private void _createObjectFromMapPixel(int x, int y)
 		{
 			throw new NotImplementedException();
