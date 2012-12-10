@@ -6,6 +6,9 @@ namespace Battle_Tanks
 {
 	public class Controls
 	{
+        /// <summary>
+        /// bardzowazne zmiany
+        /// </summary>
 		public Key keyUP
 		{
 			get
