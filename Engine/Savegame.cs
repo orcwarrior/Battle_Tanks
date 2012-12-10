@@ -2,26 +2,30 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Battle_Tanks.Engine
+namespace Battle_Tanks
 {
-	public class Enemy
+	public class Savegame
 	{
-		public override void Kill()
+		int level = 0;
+		int player1Score;
+		int player2Score;
+
+		public void readFromFile()
 		{
 			throw new NotImplementedException();
 		}
 
-		public override void Update()
+		public void writeToFile()
 		{
 			throw new NotImplementedException();
 		}
 
-		private void _doAI()
+		private void _Update()
 		{
 			throw new NotImplementedException();
 		}
 
-		public Enemy(Point pos, float speed, eDir dir, int hitPoints, Weapon weapon)
+		public Savegame()
 		{
 			throw new NotImplementedException();
 		}

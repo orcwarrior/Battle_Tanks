@@ -1,12 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using QuickFont;
 
-namespace Battle_Tanks.Engine
+namespace Battle_Tanks.Menu
 {
-	public class Controls
+	public class menuItem
 	{
-		public Key keyUP
+		private menuOpen _onClick;
+		private int _posX;
+		private int _posY;
+
+		public string text
 		{
 			get
 			{
@@ -18,7 +23,7 @@ namespace Battle_Tanks.Engine
 			}
 		}
 
-		public Key keyRIGHT
+		public QFont font
 		{
 			get
 			{
@@ -30,7 +35,7 @@ namespace Battle_Tanks.Engine
 			}
 		}
 
-		public Key keyDOWN
+		public bool inputItemType
 		{
 			get
 			{
@@ -42,36 +47,22 @@ namespace Battle_Tanks.Engine
 			}
 		}
 
-		public Key keyLEFT
-		{
-			get
-			{
-				throw new NotImplementedException();
-			}
-			set
-			{
-				throw new NotImplementedException();
-			}
-		}
-
-		public Key keySHOOT
-		{
-			get
-			{
-				throw new NotImplementedException();
-			}
-			set
-			{
-				throw new NotImplementedException();
-			}
-		}
-
-		public Controls(int playerID)
+		public menuItem()
 		{
 			throw new NotImplementedException();
 		}
 
-		public void bindKey(eKey key, Key value)
+		public menuItem(int x, int y, string txt, menuOpen clickFunc, bool inputItem)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void changeText(string newText)
+		{
+			throw new NotImplementedException();
+		}
+
+		public void Render()
 		{
 			throw new NotImplementedException();
 		}
