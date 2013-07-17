@@ -5,12 +5,14 @@ using System.Text;
 namespace Battle_Tanks
 {
 	public class Savegame
-	{
-		int level = 0;
+    {
+        #region fields
+        int level = 0;
 		int player1Score;
 		int player2Score;
+        #endregion
 
-		public void readFromFile()
+        public void readFromFile()
 		{
 			throw new NotImplementedException();
 		}

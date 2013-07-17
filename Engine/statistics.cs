@@ -7,13 +7,15 @@ namespace Battle_Tanks
 {
 	public class statistics
 	{
-		public int p1Lives;
+        static QFont statsFont;
+        #region fields
+        public int p1Lives;
 		public int p2Lives;
 		public int tanksLeft;
 		public int level;
-		static QFont statsFont;
+        #endregion
 
-		public void Update()
+        public void Update()
 		{
 			throw new NotImplementedException();
 		}
