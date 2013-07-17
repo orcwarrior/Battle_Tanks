@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using QuickFont;
-
+using Battle_Tanks;
 namespace Battle_Tanks.Menu
 {
 	public class menuItem
